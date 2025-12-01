@@ -1,0 +1,28 @@
+Exploring the Telephony Menu
+
+
+
+The "Telephony" menu in Wireshark is used to analyze voice and video call data, offering tools like VoIP Calls to display call details, 
+RTP Streams to analyze media flows, and options to play back audio streams for quality assessment. 
+It contains functions for analyzing various communication protocols, including SIP, RTP, and others, to help identify issues in telephony-related traffic. 
+Key functions in the Telephony menu
+
+VoIP Calls:
+Lists all VoIP calls detected in a capture.
+Provides details like start time, duration, source, destination, and protocol.
+Shows the call state (e.g., ringing, in-call) and the number of packets.
+Can be used to analyze call signaling dialogs (e.g., INVITE, OK, BYE) by selecting a call and viewing its "Flow".
+
+
+RTP Streams:
+Allows for the analysis of the actual media streams, which are the voice packets.
+Shows stream identifiers (SSRCs), payload types, packet counts, lost packets, and jitter.
+Can play back the audio streams to listen to the call quality directly, often by selecting "Play Streams" after identifying the forward and reverse streams.
+Provides analysis for delay, jitter, and loss.
+
+
+Other telephony protocol analysis:
+IAX2 Stream Analysis: Displays statistics and graphs for IAX2 calls.
+ISUP Messages: Provides telephone signaling information for the ISUP protocol.
+MTP3 Window: Shows statistics for the Message Transfer Part 3 (MTP3) protocol, which is part of Signaling System 7.
+LTE: Displays statistics for captured LTE MAC traffic.
