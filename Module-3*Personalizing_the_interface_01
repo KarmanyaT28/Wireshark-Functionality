@@ -1,0 +1,19 @@
+File and Packet Comments
+
+Wireshark allows users to attach comments either to an entire capture file or to individual packets. File comments are useful for documenting the purpose, context, or conditions of a capture session, and they stay embedded inside the .pcapng file so anyone opening it later can understand its relevance. Packet comments allow you to annotate specific packets, often used to highlight anomalies, explain parts of a handshake, or mark suspicious activity during analysis. To add a packet comment, you select a packet and use the Packet Comment section in the Packet Details pane. These comments are also saved in the capture file, enabling collaborative troubleshooting and more professional documentation of network investigations.
+
+Configuration Profiles
+
+Configuration profiles in Wireshark allow you to quickly switch between different layouts, filters, color rules, columns, and preferences based on your workflow. Each profile can have its own display filters, column arrangements, dissector settings, and capture preferences. For example, you can maintain one profile for TCP analysis, another for wireless troubleshooting, and another for security monitoring with color rules for suspicious packets. Switching profiles instantly changes Wireshark’s interface without affecting global settings. This makes profiles extremely useful when working on diverse network environments or when multiple team members share one system with their own analysis styles.
+
+Appearance and Layout
+
+Wireshark’s interface layout includes three major panes: the Packet List, Packet Details, and Packet Bytes. Users can rearrange these panes, resize them, or hide them depending on the level of detail required. The Appearance settings allow customization of themes, toolbar visibility, and layout density to improve readability or fit more data on the screen. You can choose light or dark themes, enable or disable toolbars, and adjust how packet trees expand by default. This flexibility ensures that analysts can design an environment that supports long hours of analysis and reduces visual fatigue.
+
+Columns, Font, and Colors
+
+Wireshark allows deep customization of columns, fonts, and color rules to enhance packet inspection. Columns can be added, removed, or reordered, and you can convert any packet field into a column by right-clicking it in the Packet Details pane. This makes protocol fields like TCP flags, DNS query names, or HTTP methods instantly visible without expanding packet trees. Font settings let you adjust size and style for packet lists and details, improving readability for long captures. Colorization rules allow Wireshark to highlight packets based on filters—for example, coloring TCP SYN packets differently from DNS queries or HTTP traffic. These visual cues help analysts spot patterns, anomalies, and protocol behavior much faster.
+
+Name Resolution
+
+Name resolution in Wireshark automatically converts numeric values—such as IP addresses, MAC addresses, and port numbers—into human-readable names. This includes resolving IP addresses to DNS names, mapping MAC addresses to vendor names, and translating port numbers to known services (like showing “HTTPS” instead of port 443). Wireshark can perform name resolution using built-in tables, external DNS lookups, or local system information. While name resolution improves readability, it can sometimes slow down analysis or produce misleading results if DNS caching is outdated. Therefore, analysts often enable or disable name resolution depending on whether accuracy or performance is the priority during a specific investigation.
