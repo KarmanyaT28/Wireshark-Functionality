@@ -1,0 +1,16 @@
+Network Discovery protocols
+
+Simple Service Discovery Protocol (SSDP) is used for service discovery in UPnP environments
+
+All join notifications service (AJNS) enables communication between IoT devices
+
+mDNS resolves host names to IP addresses on a LAN
+
+
+In the Display Filter, enter: ((!(ssdp)) && !(ajns)) && !(mdns)
+Go to the right hand side of the display filter and select the + sign
+
+Enter the Label: NoNetDisc
+Enter the comment: "No SSDP, AJNS, or mDNS" to describe the filter button, then click OK
+
+Over on the right hand side, you will see your button
