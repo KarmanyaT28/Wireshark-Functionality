@@ -1,0 +1,44 @@
+Module-1*Menus_Toolbars_03
+
+
+Edit Menu
+
+
+Copy - In Wireshark, "copy" means to duplicate selected data and transfer it to the clipboard. Depending on where you are in the application, 
+this can copy a display filter list, graph values, or packet bytes as text or raw hex data.
+
+
+In Wireshark, the "Find Packet" function allows you to search for specific packets, while "Find Next" and "Find Previous" let you navigate between packets that match your search criteria. 
+These tools are essential for analyzing large capture files to locate specific events or anomalies
+
+
+In Wireshark, "mark/unmark" toggles the marked state of a selected packet, visually highlighting it with a black background for easy identification. 
+"Mark all displayed packets" applies this marking to every packet currently visible in the Packet List pane, and "Unmark all displayed packets" removes the mark from all of them. 
+These actions are useful for visually flagging packets for later review or for controlling output during export, but the marks are temporary and are lost when the capture is closed
+
+
+In Wireshark, "ignoring" a packet temporarily hides it from the current view as if it doesn't exist, while "unignoring" makes it visible again. Ignored packets are displayed with a white background and gray text and are not saved in the capture file, 
+so they are lost when Wireshark is closed. This function allows you to remove irrelevant packets from your analysis without permanently deleting them.
+
+
+Setting a time reference in Wireshark marks a specific packet as a new starting point (\(0\) seconds) for the time-stamped packets that follow it. This feature helps analyze the time elapsed between packets after a specific event, 
+making it easier to see relative time deltas without manual calculation. Time references are temporary and will be lost when the capture file is closed.
+
+
+"time shift" refers to the ability to adjust the timestamps of all packets in a capture by a set offset. This changes the absolute time for every packet but preserves the relative time differences between them. 
+It's useful for correcting capture errors, working with different time zones, or shifting a long capture to a more convenient time frame. 
+
+
+In Wireshark, a packet comment is a custom note that you can add to an individual packet to document it for future reference or collaboration. 
+These comments are saved directly within the capture file and help explain the packet's significance, a potential issue, or the protocol behavior being observed. 
+They are distinct from general comments about the entire capture file and are added by right-clicking a packet and selecting "Packet Comment"
+
+
+In Wireshark, a configuration profile is a saved set of custom settings that tailors the program's behavior for specific analysis tasks. 
+This allows you to quickly switch between different setups for things like display filters, coloring rules, and disabled protocols without having to manually adjust them each time
+
+
+In Wireshark, "preferences" refer to the user-configurable settings that customize the program's behavior and appearance for tasks like network analysis, troubleshooting, and training
+
+
+
