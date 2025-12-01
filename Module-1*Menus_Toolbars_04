@@ -1,0 +1,31 @@
+The Wireshark "View" menu controls how data is displayed, allowing you to toggle the visibility of panes (Packet List, Details, Bytes) and toolbars, change time display formats, zoom in or out, and customize packet coloring. 
+You can also use it to expand or collapse packet details, resize columns, show packets in a new window, and perform other view-related adjustments to customize your workspace and data analysis. 
+Panes and toolbars 
+Panes: 
+You can show or hide the main panes to customize your workspace:
+Packet 
+ListPacket 
+DetailsPacket 
+BytesPacket 
+DiagramToolbars: 
+Select which toolbars appear to streamline your workflow:
+Main 
+ToolbarFilter 
+ToolbarWireless 
+ToolbarStatus Bar: 
+Show or hide the status bar at the bottom of the window, which provides capture and packet details. 
+
+
+Data display and customization Zoom: 
+Zoom in (\(Ctrl+=\)), out (\(Ctrl-=\)), or reset to normal size (\(Ctrl+=\)) to adjust the display size.
+Packet details: 
+Expand or collapse the details for packets to view more or less information.
+Expand/collapse subtrees: \(Shift+\rightarrow \) / \(Shift+\leftarrow \)Expand/collapse all subtrees: \(Ctrl+\rightarrow \) / \(Ctrl+\leftarrow \)Columns: Resize all columns to fit the current display.Coloring: Customize the display with color rules.
+
+
+Enable/disable packet list colorizationCreate new coloring rulesTime display: 
+Change the format for how time is displayed, such as Seconds Since Epoch or Date and Time of Day.Name resolution: 
+Enable or disable name resolution for the MAC, network, and transport layers to make addresses more readable. 
+Other options Show Packet in New Window: 
+Display a single packet in a separate, independent window.
+Redissect Packets: Reanalyze packets, useful if you change dissection preferences.Reload: Reload the current capture file, or reload as a different format
