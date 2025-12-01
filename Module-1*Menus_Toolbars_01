@@ -1,0 +1,24 @@
+Module-1*Menus_Toolbars_01
+
+
+Let us start with Open, which will allow you to load a pre-captured file
+
+Next is "Open Recent", you can open recent captures from past and also clear away those old entries when the schedule gets busier
+
+"Merge", this would merge that capture that you obtained with the one you currently have opened, it is really important that the time values are perfect,
+because it will use the time value to synchronise the two files.
+
+The next one is "import from hex dump", when we select and open a hex dump, ofcourse the offset is a hexadecimal and then down below,
+you see the encapsulation type. We are using the ethernet encapsulation format
+
+Close - Close the file
+
+Save, Save as - Save the file
+
+"File Set" - The File Set option in Wireshark is used to manage a group of related capture files, typically created when performing a long-term or high-volume capture. 
+Instead of recording all the traffic into a single, massive file, Wireshark can be configured to save the packets across multiple smaller 
+files based on conditions like size, duration, or a specific number of packets.
+
+Exit - Close the Wireshark Interface
+
+
