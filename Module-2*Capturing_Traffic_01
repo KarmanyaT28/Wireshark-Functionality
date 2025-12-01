@@ -1,0 +1,24 @@
+Capture Options 
+
+Here are the key takeaways from the video on capturing traffic with Wireshark:
+
+Capture Options: You can select interfaces, enable promiscuous mode, and set capture filters.
+Output Options: Capture to a permanent file or use a ring buffer for continuous capturing.
+Display Options: Update packet lists in real-time and automatically scroll during live capture.
+Stop Conditions: Set conditions to stop capture after a certain number of packets or files.
+
+These features help you efficiently manage and analyze network traffic captures
+
+
+Ring Buffer
+
+Here are the key takeaways from the video on using ring buffers and coloring rules in Wireshark:
+
+Ring Buffers: Allows saving captured traffic to a series of files that overwrite each other after a set period, helping manage resources efficiently.
+Coloring Rules: Customizable rules to highlight specific traffic types, making it easier to monitor and identify important packets.
+Capture Options: You can set up capture options to save files, use filters, and manage how the data is stored and displayed.
+
+These features help you monitor network traffic effectively without consuming excessive resources.
+
+
+
