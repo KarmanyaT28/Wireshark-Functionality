@@ -62,4 +62,20 @@ Follow: Open a sub-menu with options to follow specific protocol streams, such a
 View
 
 
+Here are the key takeaways from the video on additional menu choices in Wireshark:
+
+Go Menu: Allows you to navigate through packet captures, such as going to a specific packet number.
+Capture Menu: Helps set up traffic capture, including options to refresh interfaces and set capture filters.
+Analyze Menu: Provides features for traffic analysis, including display filters and creating macros for complex expressions.
+Follow Options: Offers different options to follow streams like TCP, UDP, and HTTP.
+Tools Menu: Includes features like firewall access control list rules to help build access control lists.
+Help Menu: Provides shortcuts to manual pages, FAQs, and updates.
+
+These features enhance Wireshark's functionality and improve your workflow.
+
+
+
+
+
+
 
