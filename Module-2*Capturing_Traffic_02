@@ -1,1 +1,15 @@
 Challenge: Ring Buffer with coloring rules
+
+
+Examining multicast Domain Name System (mDNS) traffic
+
+Provides IP Address resolution without using a DNS server
+
+Commonly used by devices on a LAN to find and communicate with other devices using PnP capabilities
+
+
+
+
+Go to View -> Coloring Rules to set the new coloring rule
+Go to Capture -> Options to set the ring buffer
+Finally, clean up your workspace
