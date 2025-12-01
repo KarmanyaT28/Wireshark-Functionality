@@ -1,0 +1,181 @@
+Capture Filters
+
+Purpose: Filters applied before capturing packets. They limit what packets Wireshark records.
+Syntax: BPF (Berkeley Packet Filter)
+
+Common Capture Filters
+
+Capture specific host:
+host 192.168.1.10
+
+Capture only traffic from IP:
+src host 10.0.0.5
+
+Capture only traffic to IP:
+dst host 10.0.0.7
+
+Capture only TCP traffic:
+tcp
+
+Capture only UDP traffic:
+udp
+
+Capture traffic on a port:
+port 80
+tcp port 443
+
+Capture subnet:
+net 192.168.1.0/24
+
+Capture all traffic except SSH:
+not port 22
+
+Capture traffic between two IPs:
+host 10.0.0.1 and host 10.0.0.2
+
+Important Notes
+
+You must set capture filters before starting the capture.
+
+Capture filters are limited in syntax compared to display filters.
+
+Capture filters cannot be modified after capture starts.
+
+2. Display Filters
+
+Purpose: Apply after capturing packets. Used for deeper analysis.
+Syntax: Wireshark Display Filter Language (more powerful than capture filters).
+
+Common Display Filters
+
+Filter by IP:
+ip.addr == 192.168.1.10
+
+Filter by source/destination:
+ip.src == 10.0.0.5
+ip.dst == 10.0.0.7
+
+Filter by protocol:
+tcp
+udp
+http
+dns
+
+Show only TCP SYN packets:
+tcp.flags.syn == 1
+
+Show only TCP FIN packets:
+tcp.flags.fin == 1
+
+Show failed handshakes (SYN, no SYN-ACK):
+tcp.flags.syn == 1 and tcp.flags.ack == 0
+
+Filter by port:
+tcp.port == 443
+udp.port == 53
+
+Show only packets containing text:
+frame contains "login"
+
+Exclude packets:
+not tcp
+!(tcp.port == 22)
+
+Key Notes
+
+You can apply display filters anytime.
+
+They don’t change the capture — only the view.
+
+3. Find Packets
+
+Purpose: Search inside packet data for specific content.
+
+How to Use
+
+Edit → Find Packet
+Choose search type:
+
+By Display Filter → find next packet that meets a filter.
+
+By String → search inside:
+
+Packet bytes
+
+Packet details
+
+Packet list column
+
+By Hex Value → search for specific byte sequences.
+
+Examples
+
+Find packets containing the string “password”:
+Find → String → Packet bytes → “password”
+
+Find next DNS query:
+Find → Display Filter → dns.flags.response == 0
+
+4. Mark Packets
+
+Purpose: Let you flag specific packets for later review.
+
+How to Mark
+
+Right-click → Mark Packet (or press Ctrl+M)
+
+Marked packets turn black background with white text (default theme).
+
+Why Use Marking
+
+Keep track of handshake, teardown, suspicious packets.
+
+Export only marked packets:
+File → Export Specified Packets → Marked Packets
+
+Untag Mark
+
+Right-click → Unmark Packet
+
+Remove all marks: Edit → Mark/Unmark All Displayed Packets
+
+5. Fine-Tune Columns
+
+Purpose: Customize the packet list to show the most useful information at a glance.
+
+How to Edit Columns
+
+Right-click any column → Column Preferences
+
+Common Useful Columns
+Column Name	What It Shows
+Source	Source IP
+Destination	Destination IP
+Protocol	Protocol (TCP, UDP, DNS, etc.)
+Length	Packet length
+Info	Summary of packet
+TCP Stream Index	For tracking conversations
+TTL	Time To Live
+Delta Time	Time difference between packets
+Adding a Custom Column
+
+Expand packet details panel
+
+Right-click a field → Apply as Column
+Example fields you often add:
+
+tcp.flags
+
+http.request.method
+
+tcp.port
+
+dns.qry.name
+
+Why Fine-Tune Columns
+
+Helps you analyze flows faster.
+
+Makes it easier to detect anomalies.
+
+Reduces the need to open packet details repeatedly.
