@@ -1,0 +1,33 @@
+Statistics Menu
+
+Protocol hierarchy
+Service response times
+Conversations and endpoints
+
+The Statistics menu in Wireshark provides a suite of tools to summarize and visualize captured network traffic, helping users quickly understand the overall scope and characteristics of a capture file without analyzing individual packets. 
+
+Key options include: Summary for a general overview, Protocol Hierarchy for protocol distribution, and Conversations to list communication sessions. 
+
+
+Other useful functions are I/O Graphs for visualizing traffic over time, Packet Lengths for analyzing packet sizes, and various protocol-specific statistics like DNS and HTTP. 
+
+Common options
+
+Summary: Provides a high-level overview of the capture file, including packet counts and duration.
+Protocol Hierarchy: Shows the distribution of network protocols as a percentage and number of packets and bytes.
+Conversations: Lists communication sessions between endpoints, categorized by layers such as Ethernet, IP, and TCP.
+Endpoints: Lists all endpoints and the traffic sent to or from them.
+Packet Lengths: Analyzes the length of packets.
+I/O Graphs: Creates user-defined graphs to visualize traffic patterns over time.
+Capture File Properties: Displays detailed information about the capture file itself. 
+Protocol-specific statistics
+The menu also contains options for in-depth analysis of specific protocols, such as:
+DNS
+HTTP
+DHCP (BOOTP)
+RTP
+IPv4 and IPv6 Statistics 
+How to use
+Use the Statistics menu to get a "lay of the land" and understand the main events in a capture file before diving into individual packets.
+You can filter the statistics to a specific display filter by using options like "Limit to display filter".
+The Conversations or Endpoints windows allow you to filter the main Wireshark display to show only packets from a specific conversation or endpoint.
