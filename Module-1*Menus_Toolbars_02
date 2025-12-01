@@ -1,0 +1,22 @@
+Export packets or objects and print
+
+"Export Specified Packets" - Use "Range", for ex. 1-20 , which would give just the first 20 packets (Certain type of traffic)
+
+"Export Packet Dissections" - In Wireshark, "Export Packet Dissections" means to save the detailed, human-readable analysis of the 
+packets in a human-readable or machine-parseable format, such as plain text, CSV, or XML. 
+This differs from a standard "Save As" which saves the raw packet data, as it focuses on extracting 
+the dissected protocol information for reporting or further analysis. 
+
+"Export Packet Bytes" - In Wireshark, "export packet bytes" refers to the process of saving the raw binary data of a selected packet, or a portion of it, 
+to a file. This is distinct from exporting packet dissections (which are human-readable text representations) or exporting specific objects (like HTTP files).
+
+"Export PDUs to File" - "Export PDUs to File" in Wireshark means to save a specific part of network traffic, such as the payload of a protocol at a certain network layer, into a new file. 
+Instead of saving the entire packet, this feature lets you isolate the data from a chosen protocol, like layer 3 (IP) or layer 4 (TCP/UDP), and export it as its own file
+
+
+"Export Objects" - is a feature that extracts and saves files or other objects that were transmitted over a network during a capture, such as images, files, or binaries sent via HTTP or SMB. 
+It's crucial for network forensics, malware analysis, and reconstructing network activities by allowing users to save individual files or entire sets of captured data for further inspection
+
+"print" refers to generating a static report of captured network packets, not just sending data to a physical printer. 
+You can use the "Print" function from the File menu to format and output a specific range of packets to a file, which can then be reviewed or shared for analysis
+
