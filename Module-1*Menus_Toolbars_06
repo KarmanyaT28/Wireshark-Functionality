@@ -1,0 +1,65 @@
+Using Graphs
+
+Flow Graphs
+I/O Graphs
+TCP stream graphs
+
+
+Flow Graphs - Provides information about the types of traffic exchanged between the endpoints
+
+Key uses - troubleshooting,protocol analysis, and visualising the flow during an incident
+
+
+I/O Graphs & TCP stream graphs - I/O graph is a one-way graph that can visualize all types of traffic
+
+TCP Stream Graph - is a two way graph that can visualize TCP connection metrics
+
+
+
+The Wireshark "TCP Stream Graphs" menu includes options like Time Sequence (Stevens), Time Sequence (tcptrace), Throughput, Round Trip Time, and Window Scaling. 
+These graphs help analyze TCP performance by visualizing sequence numbers over time, showing metrics like acknowledgments and window sizes, and mapping throughput, RTT, and window changes. 
+Types of TCP Stream Graphs
+
+Time Sequence (Stevens): Plots TCP sequence numbers against time, showing how data moves over the connection. A smooth, upward-sloping line indicates a healthy transfer.
+
+Time Sequence (tcptrace): A more detailed graph showing metrics like forward segments, acknowledgments, and zero windows.
+
+Throughput: Displays the average throughput and goodput of the TCP connection over time.
+
+Round Trip Time (RTT): Visualizes the time it takes for a packet to be sent and its acknowledgment to be received. This can help identify network congestion or latency.
+
+Window Scaling: Shows how the TCP window size changes over time, which is important for understanding how much data is in transit and can be used to diagnose performance issues. 
+
+How to access and use the graphs
+
+Select a TCP packet in your packet list pane.
+Navigate to Statistics > TCP Stream Graph in the Wireshark menu.
+Choose the desired graph type, such as Round Trip Time, Throughput, or Time Sequence (Stevens)
+
+
+Using TCP Stream Graphs
+High Latency: RTT graph shows high or increasing round-trip times
+Time-sequence graph shows significant delays between packets
+
+Packet loss and retransmissions
+
+Window issues using the TCP window scaling graph
+
+
+
+Additional menu choices - 
+
+Wireshark's additional menu choices, often found via right-clicking on packets or within the View, Statistics, and Edit menus, include options for applying packet-based filters, copying packet data in various formats, and managing packet markers and time references. Users can also find tools for adding packet comments, managing name resolutions, colorizing conversations, and adjusting protocol preferences. 
+Packet List Menu (Right-click options) 
+Apply as Filter: Create a display filter based on the selected packet.
+Copy: Copy packet data to the clipboard in formats like text, CSV, or hex dump.
+Mark Packet: Toggle a marker on or off for the selected packet.
+Ignore Packet: Toggle the "ignore" status for the selected packet.
+Set Time Reference: Set a time reference point for calculations on the selected packet.
+Time Shift: Adjust the timestamp for the selected packet.
+Packet Comment: Add a comment to a specific packet.
+Follow: Open a sub-menu with options to follow specific protocol streams, such as TCP or UDP.
+View
+
+
+
